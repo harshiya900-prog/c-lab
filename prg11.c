@@ -4,17 +4,17 @@ int main()
     int n,terms,i;
     unsigned long long factorial=1;
     unsigned long long first=0,second=1,next;
-    printf("enter a non-negative integer for factorial:");
+    printf("enetr a non-negetive integer for factorial:");
     scanf("%d",&n);
     if(n<0||n>20)
     {
         printf("enter a value from 0 to 20.\n");
         return 0;
-    }
+    } 
     for(i=1;i<=n;i++)
        factorial=factorial*i;
-    printf("factorial=%LLu\n",factorial);
-    printf("enter number of fibonecci terms:");
+    printf("factorial=%llu\n",factorial);
+    printf("enter number of fiboneci terms:");
     scanf("%d",&terms);
     if(terms<=0)
     {
@@ -24,11 +24,11 @@ int main()
     printf("fibonacci series:");
     for(i=1;i<=terms;i++)
     {
-        printf("%LLu",first);
+        printf("%llu",first);
         next=first+second;
         first=second;
         second=next;
-    }
+    }  
     printf("\n");
-    return 0;   
+    return 0;
 }
